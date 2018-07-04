@@ -4,5 +4,5 @@ class User < ApplicationRecord
 	validates :password, presence: true
 	validates :address, presence: true
 	has_one :institution
-	has_many_and_belongs_to :user
+	has_and_belongs_to_many :user
 end
