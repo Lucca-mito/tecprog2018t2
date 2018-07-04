@@ -1,4 +1,4 @@
 class Institution < ApplicationRecord
 	validates :name, presence: true
-	has_one :user
+	belongs_to :user
 end
